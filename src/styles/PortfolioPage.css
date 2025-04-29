@@ -1,0 +1,333 @@
+/* src/styles/PortfolioPage.css */
+.portfolio-page-container {
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .portfolio-container {
+    max-width: 600px;
+    width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .menu-button {
+    position: absolute;
+    color: #000000;
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .side-menu {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 4px 0 6px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .side-menu.open {
+    left: 0;
+  }
+  
+  .side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 100px 0 0 0; /* Top margin only, no bottom margin */
+    flex-grow: 1; /* Takes up available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Links at the top */
+  }
+  
+  .side-menu ul li {
+    margin-bottom: 20px;
+  }
+  
+  .side-menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+  }
+  
+  .side-menu ul .contact-support {
+    color: #fffefd;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 10px 20px;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: auto; /* Pushes to bottom */
+    margin-bottom: 20px; /* Space from bottom edge */
+  }
+  
+  .portfolio-title {
+    font-size: 28px;
+    margin: 0 auto 60px;
+    color: #333;
+    text-align: center;
+  }
+  
+  .add-recipe-section {
+    margin-bottom: 20px;
+  }
+  
+  .add-recipe-btn {
+    background: #f8b400;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .add-recipe-btn:hover {
+    background: #d99a00;
+  }
+  
+  .add-recipe-form {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    max-height: 350px;
+  }
+  
+  .recipe-card {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-card h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #f8b400;
+  }
+  
+  .recipe-card p {
+    font-size: 16px;
+    color: #444;
+    margin: 5px 0;
+  }
+  
+  .read-more-btn {
+    background: #f8b400;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+  }
+  
+  .read-more-btn:hover {
+    background: #d99a00;
+  }
+  
+  .recipe-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .edit-recipe-btn {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .edit-recipe-btn:hover {
+    background: #45a049;
+  }
+  
+  .delete-recipe-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .delete-recipe-btn:hover {
+    background: #c0392b;
+  }
+  
+  .edit-input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .edit-textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  .edit-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .save-btn {
+    background: #f8b400;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .save-btn:hover {
+    background: #d99a00;
+  }
+  
+  .cancel-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .cancel-btn:hover {
+    background: #c0392b;
+  }
+  
+  .social-share {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
+  }
+  
+  .share-icon {
+    font-size: 24px;
+    color: #f8b400;
+    transition: transform 0.3s;
+  }
+  
+  .share-icon:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer {
+    padding: 20px;
+    color: #000000;
+    text-align: center;
+  }
+
+  .recipe-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .edit-input[type="file"] {
+    margin-top: 10px;
+    padding: 5px;
+  }
+  .recipe-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .portfolio-container {
+      position: absolute;
+      width: 300px;
+      padding: 25px;
+      height: auto;
+    }
+  
+    .menu-button {
+      font-size: 25px;
+      top: 10px;
+      left: 10px;
+    }
+  
+    .side-menu {
+      width: 200px;
+      left: -200px;
+    }
+  
+    .side-menu.open {
+      left: 0;
+    }
+  
+    .side-menu ul li a {
+      font-size: 1rem;
+    }
+  
+    .recipe-card h2 {
+      font-size: 18px;
+    }
+
+    .add-recipe-btn {
+      margin-top: -10px;
+    }
+  
+    .recipe-card p {
+      font-size: 14px;
+      
+    }
+  }

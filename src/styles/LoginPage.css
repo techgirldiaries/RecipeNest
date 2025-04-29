@@ -1,0 +1,185 @@
+/* Page container to hold logo and login form */
+.login-page-container {
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;  /* Ensure it takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Pushes footer to the bottom */
+}
+
+/* Logo on top of the login container */
+.login-logo {
+    width: 300px; /* Adjust logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto 20px; 
+    padding-left: 45px;
+    position: relative;
+    top: 50px;
+    margin-right: 0px;
+}
+
+/* Login container style */
+.login-container {
+    width: 100%;
+    max-width: 350px;  /* Max width for larger screens */
+    margin: 20px auto;
+    position: relative;
+    top: -60px;
+    text-align: center;
+    background: rgba(246, 199, 128, 0.9);
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Login header style */
+.login-header {
+    color: #ea1010;
+    margin-bottom: 20px;
+}
+
+/* Form layout */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input fields */
+.input-field {
+    margin-bottom: 15px;
+}
+
+.input-field input {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button styles */
+button.btn {
+    padding: 10px;
+    background-color: #ce1010;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;  /* Make button responsive */
+    margin-top: 10px;
+}
+
+button.btn:hover {
+    background-color: #d81010;
+}
+
+/* Link styles for redirection (already have an account) */
+.registration-link {
+    display: flex;
+    justify-content: center; /* Centers the items */
+    align-items: center; /* Vertically aligns the text and link */
+    margin-top: 10px
+}
+
+.registration-link p {
+    margin-right: 5px;
+    font-size: 1rem;
+}
+
+.registration-link a {
+    color: #25418d;
+    text-decoration: none;
+    position: relative;
+    top: 0px;
+    margin-left: 2px;
+}
+
+.registration-link a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Home link styling */
+.login-back-link a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.login-back-link a:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 253, 253);
+    width: 100%;
+    position: absolute;
+    bottom: -1px; /* Adjusted to stay closer to the bottom */
+    margin-left: -15px;
+    font-size: 0.9rem;
+}
+
+/* Account link styling */
+.login-account-link {
+    color: black;
+    font-size: 1.2rem;
+    display: inline;
+    position: relative;
+    top: 0px;
+}
+
+.error-message {
+    color: #ea1010; /* Matches your red theme */
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  .success-message {
+    color: #5a6b47; /* Matches sage green from WelcomePage */
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+    .login-logo {
+        width: 200px; 
+        margin-left: -35px;
+        top: 40px; 
+        margin-top: -30px;
+    }
+
+    .login-container {
+        width: 90%;  
+        padding: 17px; 
+    }
+
+    .input-field input {
+        font-size: 0.9rem;  /* Adjust input font size for smaller screens */   
+    }
+
+    button.btn {
+        font-size: 1rem;  
+    }
+
+    .footer {
+        font-size: 0.8rem;  /* Smaller footer font on mobile */
+    }
+
+    /* Adjust "Already have an account?" link */
+    .registration-link a {
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
+
+    /* Adjust back link */
+    .login-back-link a {
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+}
+

@@ -1,0 +1,380 @@
+/* src/styles/ProfilePage.css */
+.profile-page-container {
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container {
+  max-width: 600px;
+  min-width: 600px; /* Ensures width remains the same */
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative; /* Make container the positioning context for menu-button */
+  min-height: 500px; /* Ensures the container doesn't shrink when empty */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Keeps content centered */
+}
+
+
+
+.menu-button {
+  position: absolute;
+  color: #000000;
+  top: 10px; /* Relative to profile-container */
+  left: 10px; /* Relative to profile-container */
+  font-size: 40px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.side-menu {
+  position: fixed; /* Still fixed to slide over the page */
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 4px 0 6px rgba(0, 0, 0, 0.2);
+  transition: left 0.3s ease;
+  z-index: 100;
+}
+
+.side-menu.open {
+  left: 0;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 100px;
+}
+
+.side-menu ul li {
+  margin-bottom: 20px;
+}
+
+.side-menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #f8b400;
+  display: block;
+  margin: 0 auto 0px; /* Center the image and add margin */
+  align-items: center;
+  justify-content: center;
+}
+
+.chef-name {
+  margin: 10px 0;
+  padding-left: 2px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+
+
+.chef-title {
+  font-size: 24px;
+  color: #000000;
+  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.chef-title:empty::before {
+  content: "Add Bio";
+  color: #888;
+  font-style: italic;
+  display: block;
+  word-wrap: break-word; /* Wrap placeholder too */
+  white-space: normal;
+}
+
+.profile-bio p:empty::before {
+  content: "Add Description";
+  color: #888;
+  font-style: italic;
+  display: block;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+
+.profile-bio {
+  margin: 15px 0;
+  margin-top: -20px;
+  font-size: 16px;
+  color: #444;
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-icon {
+  font-size: 30px;
+  margin: 0 10px;
+  color: #f8b400;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+.edit-profile-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background: #f8b400;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.edit-profile-btn:hover {
+  background: #d99a00;
+}
+
+/* Edit mode styles */
+.edit-label {
+  margin-top: 10px;
+  font-size: 16px;
+  position: relative;
+  font-weight: bold;
+  color: #000000;
+}
+
+.edit-picture-label {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.edit-picture-label:hover {
+  color: #f8b400;
+}
+
+.edit-input {
+  width: 80%;
+  margin-bottom: 25px!important;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  display: block;
+}
+
+.edit-textarea {
+  width: 80%;
+  margin: 5px auto;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  min-height: 100px;
+  resize: vertical;
+}
+
+.edit-picture-section {
+  position: relative;
+}
+
+.picture-options-box {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 10;
+  width: 200px;
+}
+
+.option-btn {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0;
+  border: none;
+  background: #f8b400;
+  color: white;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.option-btn:hover {
+  background: #d99a00;
+}
+
+.upload-option {
+  padding: 8px;
+  background: #f8b400;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 92%;
+}
+
+.upload-option:hover {
+  background: #d99a00;
+}
+
+.upload-input {
+  display: none;
+}
+
+.footer {
+  padding: 20px;
+  margin-bottom: -20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .profile-container {
+    position: absolute;
+    width: 390px !important;
+    min-width: 80px !important;
+    margin-bottom: 150px;
+  
+    padding: 15px;
+    padding-bottom: 0px; /* Adjusted for smaller screens */
+    text-align: center; /* Ensure centering for children */
+  }
+
+  .profile-header {
+    margin: 0; /* Remove any default margins */
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    margin-top: -30px; /* Adjusted for smaller screens */
+  }
+
+  .chef-name {
+    font-size: 20px;
+    text-align: center;
+    margin: 50;
+    margin-bottom: 5px; /* Small gap below */
+    line-height: 1; /* Reduce vertical spacing */
+    display: block;
+  }
+
+  .chef-title {
+    font-size: 20px;
+    text-align: center;
+    margin: 0; /* Remove default <h2> margins */
+    margin-top: -5px; /* Pull closer to chef-name */
+    display: inline-flex; /* Align children on the same line */
+    align-items: baseline; /* Ensure baseline alignment */
+    gap: 5px; /* Space between location and age */
+    width: 100%; /* Full width for centering */
+    line-height: normal; /* Let font metrics handle baseline */
+  }
+
+  .location {
+    font-weight: 600; /* Match screenshot bold style */
+    font-style: normal; /* Remove italic unless desired */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Consistent font */
+    vertical-align: baseline; /* Force baseline */
+    line-height: normal; /* Avoid interference */
+    margin-left: 145px; /* Adjusted for smaller screens */
+    margin-top: 10px; /* Adjusted for smaller screens */
+  }
+
+  .age {
+    font-weight: 600; /* Match screenshot bold style */
+    font-style: normal; /* Remove italic unless desired */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; /* Consistent font */
+    vertical-align: baseline; /* Force baseline */
+    line-height: normal; /* Avoid interference */
+    position: relative; /* Fine-tune position */
+
+  }
+
+  .profile-bio {
+    font-size: 15px;
+    margin-left: -20px;
+    margin-top: 0px;
+    margin-bottom: -5px;
+  }
+
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+    margin-top: -10px;
+  }
+
+  .profile-container.editing {
+    position: absolute; 
+    width: 80%; 
+    margin: 60px;
+    margin-bottom: auto;
+    padding: 15px; 
+    background: #fff; /* Optional: Add a background color */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
+
+  .edit-input,
+  .edit-textarea {
+    width: 90%!important;
+    margin-left: 30px!important;
+  }
+
+  .picture-options-box {
+    width: 150px;
+  }
+
+  .menu-button {
+    font-size: 45px!important;
+    top: 10px;
+    left: 10px;
+  }
+
+  .side-menu {
+    width: 200px;
+    left: -200px;
+  }
+
+  .footer {
+    position: fixed;
+  }
+
+  .side-menu.open {
+    left: 0;
+  }
+
+  .side-menu ul li a {
+    font-size: 1rem;
+  }
+
+  .contact-support { 
+    font-size: 0.8rem!important;
+    position: relative;
+    margin-left: -20px;
+  }
+}

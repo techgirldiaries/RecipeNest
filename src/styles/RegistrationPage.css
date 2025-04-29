@@ -1,0 +1,153 @@
+/* Page container to hold logo and registration form */
+.registration-page-container {
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;  /* Ensure it takes up the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  /* Pushes footer to the bottom */
+}
+
+/* Logo on top of the registration container */
+.registration-logo {
+    width: 170px; /* Adjust logo width */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 auto 20px; 
+    position: relative;
+    top: 50px;
+    margin-right: -33px;
+}
+
+/* Registration form container */
+.registration-container {
+    width: 100%;
+    max-width: 400px;  /* Max width for larger screens */
+    margin: 10px auto;
+    text-align: center;
+    background: rgba(246, 199, 128, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header styling */
+.registration-header {
+    color: #ea1010;  /* Color for the Registration header */
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input field styling */
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Button styling */
+button {
+    padding: 10px;
+    background-color: #ce1010;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    width: 100%;  /* Make button responsive */
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #d81010;
+}
+
+/* Login link styling */
+.login-link {
+    margin-top: 20px;
+      /* Space between form and login link */
+}
+
+.login-link p {
+    font-size: 1rem;
+    
+}
+
+.login-link a {
+    color: #25418d;  /* Change this to your desired link color */
+    text-decoration: none;
+    position: relative;
+    top: -7px; 
+    margin-left: 3px;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* Back to Home link styling */
+.back-link a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.back-link a:hover {
+    text-decoration: underline; /* Optional: Adds underline on hover */
+}
+
+/* Footer styling */
+.footer {
+    text-align: center;
+    padding: 10px;
+    color: rgb(255, 253, 253) !important;
+    width: 100%;
+    position: relative;
+    left: 10px; /* Adjusted to stay closer to the left */
+    bottom: 10px; /* Adjusted to stay closer to the bottom */
+    margin-left: -15px;
+    font-size: 0.89rem;
+}
+
+/* Account link styling */
+.account-link {
+    color: black;
+    font-size: 1.2rem;
+    display: inline;
+    position: relative;
+    top: -7px;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 600px) {
+    .registration-logo {
+        width: 180px; 
+        margin-top: -40px;
+        margin-bottom: 5px; /* Adjusted to reduce space below the logo */
+        margin-left: -25px; /* Adjusted to center the logo */
+    }
+
+    .registration-container {
+        width: 90%;  /* Full width on small screens */
+        padding: 15px;  /* Reduced padding */
+    }
+
+    input {
+        font-size: 0.9rem;  /* Adjust input font size for smaller screens */
+    }
+
+    button {
+        font-size: 1rem;  /* Adjust button font size */
+    }
+
+    .footer {
+        font-size: 0.8rem; 
+        margin-bottom: -60px !important
+        
+    }
+}
