@@ -55,7 +55,7 @@ Recipe Nest is a african-centric full-stack web application designed to connect 
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-repo/recipe-nest.git
+   git clone https://github.com/techgirldiaries/RecipeNest.git
 
 2. Navigate to the backend directory:
 
