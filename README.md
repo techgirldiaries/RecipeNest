@@ -43,7 +43,7 @@ Recipe Nest is a african-centric full-stack web application designed to connect 
 - npm v10.9.2 or higher
 - [ASP.NET SDK v6.0 or higher](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks)
 - [SQLite extension](https://marketplace.visualstudio.com/items/?itemName=alexcvzz.vscode-sqlite)
-- [Visual Studio Code](https://code.visualstudio.com/download))
+- [Visual Studio Code](https://code.visualstudio.com/download)
 
 ### Steps
 
