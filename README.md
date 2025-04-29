@@ -60,8 +60,7 @@ Recipe Nest is a african-centric full-stack web application designed to connect 
 2. Navigate to the backend directory:
 
    ```bash
-   cd Recipe-nest 
-   then, cd RecipeNestAPI
+   cd RecipeNestAPI
    ```
 
 3. Run the backend:
