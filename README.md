@@ -1,6 +1,6 @@
 # Recipe Nest
 
-Recipe Nest is a african-centric full-stack web application designed to connect chefs and food enthusiasts. It serves as a platform for sharing recipes, showcasing culinary talents and fostering a global culinary community.
+Recipe Nest is a chef-centric full-stack web application designed to connect chefs and food enthusiasts, which serves as a platform for sharing recipes, showcasing culinary talents and fostering a global culinary community.
 
 ## Features
 
