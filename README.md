@@ -1,6 +1,6 @@
 # Recipe Nest
 
-Recipe Nest is a chef-centric full-stack web application designed to connect chefs and food enthusiasts, which serves as a platform for sharing recipes, showcasing culinary talents and fostering a global culinary community.
+**Recipe Nest** is a full-stack web application designed to connect chefs and food lovers. It serves as a platform for sharing recipes, showcasing culinary talents and fostering a culinary community.
 
 ## Features
 
@@ -221,14 +221,6 @@ To deploy Recipe Nest:
 - Implement a subscription model for premium features.
 - Introduce a mobile app version.
 
-## License
-
-This project is licensed under the MIT License. See the LICENSE file for details.
-
-## Authors
-
-Group 3 - Kwasi & Kemi - Recipe Nest Developers
-
 ## Acknowledgments
 
 - [Nodejs](https://nodejs.org/) for the frontend framework.
@@ -245,3 +237,8 @@ A: Yes, guests can browse recipes and interact with them without creating an acc
 
 **Q: How do I reset my password?**  
 A: Use the "Forgot Password" link on the login page to reset your password.
+
+## License
+Licensed under the PolyForm Noncommercial License - Commercial use is prohibited
+
+Copyright (c) 2025 Oluwakemi Obadeyi
