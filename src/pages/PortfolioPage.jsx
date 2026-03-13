@@ -279,7 +279,7 @@ const PortfolioPage = () => {
                     <a href={`https://instagram.com/sharer.php?u=${window.location.href}`} target="_blank" rel="noopener noreferrer">
                       <FaInstagram className="share-icon" />
                     </a>
-                    <a href={`https://twitter.com/intent/tweet?url=${window.location.href}&text=Check out this recipe: ${recipe.title}`} target="_blank" rel="noopener noreferrer">
+                    <a href={`https://twitter.com/intent/tweet?url=${window.location.href}&text=Check out this recipe: ${encodeURIComponent(recipe.title)}`} target="_blank" rel="noopener noreferrer">
                       <FaTwitter className="share-icon" />
                     </a>
                     <a href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`} target="_blank" rel="noopener noreferrer">
