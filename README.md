@@ -221,6 +221,11 @@ To deploy Recipe Nest:
 - Implement a subscription model for premium features.
 - Introduce a mobile app version.
 
+## Collaborator
+
+- [Oluwakemi](https://github.com/techgirldiaries)
+- [Kwesi/Kwasi](https://github.com/serkwesi)
+
 ## Acknowledgments
 
 - [Nodejs](https://nodejs.org/) for the frontend framework.
